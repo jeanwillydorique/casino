@@ -60,11 +60,10 @@ class drawcontroller extends Controller
         }
         
 
-
         // comparaison et recup
         
         $numbers = $request->number;
-        $stars = $request->stars;
+        $stars = $request->star;
 
         $resultfalse = array_diff($rands, $numbers);
         $resultgood = array_intersect($rands, $numbers);

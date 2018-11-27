@@ -13,10 +13,9 @@
 
             <div class="numberticket">
                 @for ($i = 1; $i < 50; $i++)
-                <div class="button">
-                    <div class="btn btn-default btn-circle" >{{ $i }}
-                        <input type="checkbox" class="hidden" name="number[]" value="{{ $i }}">
-                    </div>
+                <div class="button" >
+                    <input type="button" class="btn btn-default btn-circle" value = "{{ $i }}">
+                    <input type="checkbox" class="hidden" name="number[]" value="{{ $i }}">
                 </div>
                 @endfor
             </div>
@@ -24,11 +23,10 @@
 
             <div class="starsticket">
                 @for ($j = 1; $j < 8; $j++)
-                <div class="button">
-                    <div class="btn btn-default btn-circlestars" >{{ $j }}
-                        <input type="checkbox" class="hidden" name="stars[]" value="{{ $j }}">
+                <div class="buttonstar" >
+                        <input type="button" class="btn btn-default btn-circlestars" value = "{{ $j }}">
+                        <input type="checkbox" class="hiddenstar" name="star[]" value="{{ $j }}">
                     </div>
-                </div>
                 @endfor
             </div>
 

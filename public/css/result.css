@@ -1,0 +1,52 @@
+
+.result{
+    width: 50%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rands, .numbers{
+    width: 50%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rands .button, .numbers .button{
+    width: 20%;
+    height: 20%;
+    display: flex;
+}
+
+.false{
+    background-color: red;
+}
+.good{
+    background-color: green;
+}
+
+.starrand, .stars{
+    width: 50%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.starrand .button, .stars .button{
+    width: 20%;
+    height: 20%;
+    display: flex;
+}

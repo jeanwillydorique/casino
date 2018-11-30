@@ -11,12 +11,17 @@ class Card extends Connector
 
     public function getDeck($decknumber)
     {
-        $this->tab("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=$decknumber");
+        return $this->tab("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=$decknumber");
     }
 
     public function getCard($id, $number)
     {
-        $this->tab("https://deckofcardsapi.com/api/deck/$id/draw/?count=$number");
+        return $this->tab("https://deckofcardsapi.com/api/deck/$id/draw/?count=$number");
+    }
+
+    public function getDeckTest()
+    {
+        return $this->tab("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1");
     }
 
 }

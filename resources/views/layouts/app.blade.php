@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link href="{{ asset( 'css/ticket.css' ) }}" rel="stylesheet" type="text/css">
         <link href="{{ asset( 'css/result.css' ) }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset( 'css/poker.css' ) }}" rel="stylesheet" type="text/css">
     </head>
     <body>
             @yield('content')

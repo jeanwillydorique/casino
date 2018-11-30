@@ -17,3 +17,12 @@ Route::get('/', function () {
 
 Route::get('/home', 'drawcontroller@index');
 Route::post('/draw', 'drawcontroller@draw');
+
+
+// poker
+
+
+Route::get('/poker', 'viewsController@pokerHome');
+Route::post('/pokerplay', 'IAController@pokerPlayStart');
+Route::post('/turn', 'IAController@pokerAction');
+Route::get('/card', 'IAController@test');
